@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const MyComponent = () => {
-  const name = "Inés";
+  const name = " Inés ";
   const repository = "https://github.com/inesmariao/component-practice.git/"; 
  
   const student = {
@@ -10,6 +10,8 @@ export const MyComponent = () => {
     mobile: "3145494820",
     LinkedinProfile: "https:"
   }
+
+  console.log(student);
  
   return (
     <div>
@@ -28,11 +30,11 @@ export const MyComponent = () => {
         <p>Repositorio:{ repository } </p>
         <hr/>
         <h2>Datos del estudiante</h2>
-        <p>Nombre: { JSON.stringify ( student )}</p> 
-        <p>Nombre: {student.name} </p>
-        <p>Apellido: {student.LastName} </p>
-        <p>Celular: {student.mobile} </p>
-        <p>Perfil de Linkedin: { student.LinkedinProfile } </p>
+        <p>Nombre:   { JSON.stringify ( student )}</p> 
+        <p>Nombre:   { student.name } </p>
+        <p>Apellido: { student.LastName } </p>
+        <p>Celular:  { student.mobile } </p>
+        <p>Perfil de LinkedIn: { student.LinkedinProfile } </p>
     </div>
   )
 }
